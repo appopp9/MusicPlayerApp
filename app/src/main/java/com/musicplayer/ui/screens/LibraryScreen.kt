@@ -22,7 +22,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Album
-import androidx.compose.material.icons.filled.Artist
+import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.SortByAlpha
 import androidx.compose.material.icons.filled.Timer
@@ -147,7 +147,7 @@ fun LibraryScreen(
                 QuickAccessCard(
                     title = "Artists",
                     subtitle = "${artists.size} artists",
-                    icon = Icons.Default.Artist,
+                    icon = Icons.Default.Person,
                     onClick = { selectedTab = 2 },
                     modifier = Modifier.weight(1f)
                 )
@@ -361,7 +361,7 @@ private fun ArtistList(
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        Icons.Default.Artist,
+                        Icons.Default.Person,
                         contentDescription = null,
                         tint = MaterialTheme.colorScheme.onSecondaryContainer,
                         modifier = Modifier.size(28.dp)
